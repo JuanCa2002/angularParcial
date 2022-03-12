@@ -1,0 +1,24 @@
+
+<br>
+<div class=" row container" id="formulario" >
+  <h1 >Informacion del cliente</h1>
+  <br>
+<h3>
+  CARGO POR TIEMPO DE APARCAMIENTO:{{cargo}}
+</h3>
+<div  class="col-12"  *ngIf="nombres.length!=0 && apellidos.length!=0 && cedula.length!=0 && tipoAutomovil.length!=0 && placa.length!=0">
+  <br>
+  <h3>Cliente registrado</h3>
+  <br>
+  <h3>NOMBRES: {{nombres}}</h3>
+  <br>
+  <h3>APELLIDOS: {{apellidos}}</h3>
+  <br>
+  <h3>CEDULA: {{cedula}}</h3>
+  <br>
+  <h3>TIPO DE AUTOMOVIL: {{tipoAutomovil}}</h3>
+  <br>
+  <h3>PLACA:  {{placa}}</h3>
+</div>
+</div>
+

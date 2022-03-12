@@ -1,0 +1,54 @@
+<h1 class="center">PARQUEADERO TORETTO</h1>
+<div class="row" id="formulario">
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="nombres" class="form-label">Nombres</label>
+  <input type="text" class="form-control" id="nombres" placeholder=""[(ngModel)]="nombres" >
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="apellidos" class="form-label">Apellidos</label>
+  <input type="text" class="form-control" id="apellidos" placeholder="" [(ngModel)]="apellidos" >
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="cedula" class="form-label">Cedula</label>
+  <input type="number" class="form-control" id="cedula" placeholder=""[(ngModel)]="cedula">
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="tipoAutomovil" class="form-label">Tipo de vehiculo</label>
+  <input type="text" class="form-control" id="tipoAutomovil" placeholder="" [(ngModel)]="tipoAutomovil">
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="placa" class="form-label">Placa</label>
+  <input type="text" class="form-control" id="placa" placeholder="" [(ngModel)]="placa">
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
+  <input class="form-control" type="datetime-local" id="fechaInicio"#fechaInicio>
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div class="col-4 mb-3">
+  <label for="fechaTermino" class="form-label">Fecha de Termino</label>
+  <input class="form-control" type="datetime-local" id="fechaTermino"#fechaTermino>
+</div>
+  <div class="col-4"></div>
+  <div class="col-4"></div>
+<div id="boton calcular">
+<button  (click)="calcularFechasFinal(fechaInicio.value,fechaTermino.value) "
+        type="button"  class="btn btn-success" > Calcular</button>
+</div>
+</div>
+
+<app-parqueadero  [cargo]="cargo" [nombres]="nombres" [apellidos]="apellidos"
+
+                 [cedula]="cedula" [tipoAutomovil]="tipoAutomovil" [placa]="placa"></app-parqueadero>

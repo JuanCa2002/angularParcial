@@ -1,0 +1,19 @@
+<form >
+<div class="form-group">
+  <label>Ingrese valor en farenheit para convertir a centigrados</label>
+  <input type="number"  name="farenheit" class="form-control" [(ngModel)]="conversion1" >
+</div>
+
+<button type="button" class="btn btn-danger mt-2ng " (click)="getConversionFarenheitCentigrados()">
+  convertir
+</button>
+
+<div class="form-group">
+  <label>Ingrese valor en centigrados para convertir a farenheit</label>
+  <input type="number"  name="centigrados" class="form-control" [(ngModel)]="conversion2" >
+</div>
+
+<button type="button" class="btn btn-danger mt-2ng " (click)="getConversionCentigradosFarenheit()">
+  convertir
+</button>
+</form>
